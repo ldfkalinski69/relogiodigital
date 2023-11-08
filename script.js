@@ -21,3 +21,12 @@ const relogio = setInterval(function time() {
   valores das variáveis hr, min e s, respectivamente. Isso atualiza a exibição do relógio digital
    na página web com os valores da hora atual.*/
 })
+const audio = document.getElementById('background-audio');
+
+        // Função para iniciar a reprodução do áudio quando o mouse entra na página
+        function playAudioOnMouseEnter() {
+            audio.play();
+        }
+
+        // Adiciona um ouvinte de evento para o evento "mouseenter" na página
+        document.body.addEventListener('mouseenter', playAudioOnMouseEnter);
